@@ -1,5 +1,6 @@
 ## vplugin
 - [Home]()
+- [Example](#docs/example)
 - [License](#docs/LICENSE)
 
 ## The Bits
