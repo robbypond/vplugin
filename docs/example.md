@@ -21,9 +21,12 @@ To use this plugin you'll need to add the following apply:
 And modify your buildscript entry as follows:
 
 	buildscript {
-		 dependencies {
+	    repositories {
+	           mavenCentral()
+		}
+		dependencies {
 		        classpath 'com.github.nwillc:vplugin:1.+'
-		    }
+		}
 	}
 
 ## Invoking the Task
