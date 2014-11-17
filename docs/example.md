@@ -2,7 +2,11 @@
 This plugin will produce output for your gradle project similar to:
 
 	:versions
-
+	Searching repositories:
+		MavenRepo at https://repo1.maven.org/maven2/
+		BintrayJCenter at https://jcenter.bintray.com/
+		maven at http://maven.tmatesoft.com/content/repositories/releases/
+		
 	Dependency                                             Using              Update
 	----------                                             -----              ------
 	com.github.nwillc:almost-functional                    1.6.+ ->            1.7.7
