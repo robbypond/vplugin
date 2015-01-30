@@ -10,6 +10,5 @@
 ## Links
 - [Issue Tracking](https://github.com/nwillc/vplugin/issues)
 
-
-
-
+--------
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.nwillc/vplugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.nwillc/vplugin)
