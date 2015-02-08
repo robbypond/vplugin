@@ -11,4 +11,6 @@
 - [Issue Tracking](https://github.com/nwillc/vplugin/issues)
 
 --------
+[![Build Status](https://travis-ci.org/nwillc/vplugin.svg?branch=master)](https://travis-ci.org/nwillc/vplugin)
+<br/>
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.nwillc/vplugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.nwillc/vplugin)
