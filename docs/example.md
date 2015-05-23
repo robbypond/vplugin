@@ -17,9 +17,9 @@ This plugin will produce output for your gradle project similar to:
 
 It will show you what your dependency pattern is using, and if the pattern doesn't match the latest version it will suggest the update version.
 
-**NB:** Artifacts that release with oddball naming like adding *beta* or *rc* etc. may upset the order sort. 
+**NB:** Artifacts that release with oddball naming like adding *beta* or *rc* etc. may upset the order sort.
 
 ## Invoking the Task
-To invoke the vplugin task simply:
+To invoke the vplugin *versions* task simply:
 
 	gradle versions
