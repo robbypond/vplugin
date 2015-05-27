@@ -13,3 +13,5 @@
 
 --------
 [![Build Status](https://travis-ci.org/nwillc/vplugin.svg?branch=master)](https://travis-ci.org/nwillc/vplugin)
+<br/>
+[![Coverage Status](https://coveralls.io/repos/nwillc/jdk8-tostring/badge.svg?branch=master)](https://coveralls.io/r/nwillc/jdk8-tostring?branch=master)
