@@ -12,6 +12,6 @@
 - [Issue Tracking](https://github.com/nwillc/vplugin/issues)
 
 --------
-[![Build Status](https://travis-ci.org/nwillc/vplugin.svg?branch=master)](https://travis-ci.org/nwillc/vplugin)
+[![ISC License](https://img.shields.io/badge/license-ISC-green.svg?style=flat)](https://tldrlegal.com/license/-isc-license)
 <br/>
-[![Coverage Status](https://coveralls.io/repos/nwillc/jdk8-tostring/badge.svg?branch=master)](https://coveralls.io/r/nwillc/jdk8-tostring?branch=master)
+[![Build Status](https://travis-ci.org/nwillc/vplugin.svg?branch=master)](https://travis-ci.org/nwillc/vplugin)
