@@ -13,6 +13,6 @@
 <br/>
 [![Build Status](https://travis-ci.org/nwillc/vplugin.svg?branch=master)](https://travis-ci.org/nwillc/vplugin)
 <br/>
-[![Github Repo](https://http://shields-nwillc.rhcloud.com/shield/github)](https://http://shields-nwillc.rhcloud.com/homepage/github?path=nwillc&package=vplugin)
+[![Github Repo](http://shields-nwillc.rhcloud.com/shield/github)](http://shields-nwillc.rhcloud.com/homepage/github?path=nwillc&package=vplugin)
 <br/>
-[![Download](https://http://shields-nwillc.rhcloud.com/shield/gradle_plugin?group=com.github.nwillc&package=vplugin)](http://shields-nwillc.rhcloud.com/homepage/gradle_plugin?group=com.github.nwillc&package=vplugin)
+[![Download](http://shields-nwillc.rhcloud.com/shield/gradle_plugin?group=com.github.nwillc&package=vplugin)](http://shields-nwillc.rhcloud.com/homepage/gradle_plugin?group=com.github.nwillc&package=vplugin)
