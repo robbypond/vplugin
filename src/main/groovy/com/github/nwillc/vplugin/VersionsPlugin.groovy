@@ -15,13 +15,11 @@
  */
 
 package com.github.nwillc.vplugin
-
 import com.google.common.annotations.VisibleForTesting
-import org.gradle.api.Project
 import org.gradle.api.Plugin
+import org.gradle.api.Project
 import org.gradle.api.artifacts.Configuration
 import org.gradle.api.artifacts.Dependency
-import org.gradle.api.artifacts.repositories.ArtifactRepository
 import org.xml.sax.SAXParseException
 
 import java.util.regex.Matcher
@@ -74,22 +72,11 @@ class VersionsPlugin implements Plugin<Project> {
     private static String[] repoUrls(Project project) {
         def urls = []
         println 'Searching repositories:'
-        for (ArtifactRepository repo : project.repositories) {
+        (project.repositories + project.buildscript.repositories).each { repo ->
             if (repo.hasProperty('url') && repo.url) {
                 def url = repo.url.toString()
-                if (url.startsWith('http') && !urls.contains(url)) {
-                    println '\t' + repo.name + ' at ' + url
-                    urls.add(url)
-                }
-            }
-        }
-        for (ArtifactRepository repo : project.buildscript.repositories) {
-            if (repo.hasProperty('url') && repo.url) {
-                def url = repo.url.toString()
-                if (url.startsWith('http') && !urls.contains(url)) {
-                    println '\t' + repo.name + ' at ' + url
-                    urls.add(url)
-                }
+                println '\t' + repo.name + ' at ' + url
+                urls.add(url)
             }
         }
         println ''
