@@ -42,23 +42,28 @@ class VersionsPlugin implements Plugin<Project> {
             def checked = [:]
             println sprintf('%-40s%20s%20s', 'Dependency', 'Using', 'Update')
             println sprintf('%-40s%20s%20s', '----------', '-----', '------')
+            def dependencies = []
             project.configurations.each { Configuration configuration ->
-                configuration.allDependencies.each { Dependency dependency ->
-                    if (dependency.version != null && !dependency.version.contains('SNAPSHOT') && !checked[dependency]) {
-                        for (String url : urls) {
-                            def newest = latest(url, dependency.group, dependency.name)
-                            if (newest != null) {
-                                if (match(dependency.version, newest.toString())){
-                                    println sprintf('%-40s%20s',"$dependency.group:$dependency.name", newest)
-                                } else {
-                                    println sprintf('%-40s%20s ->%17s',"$dependency.group:$dependency.name",dependency.version, newest)
-                                }
-                                break
+                dependencies.addAll(configuration.allDependencies)
+            }
+            project.buildscript.configurations.each { Configuration configuration ->
+                dependencies.addAll(configuration.allDependencies)
+            }
+            dependencies.each { Dependency dependency ->
+                if (dependency.version != null && !dependency.version.contains('SNAPSHOT') && !checked[dependency]) {
+                    for (String url : urls) {
+                        def newest = latest(url, dependency.group, dependency.name)
+                        if (newest != null) {
+                            if (match(dependency.version, newest.toString())){
+                                println sprintf('%-40s%20s',"$dependency.group:$dependency.name", newest)
+                            } else {
+                                println sprintf('%-40s%20s ->%17s',"$dependency.group:$dependency.name",dependency.version, newest)
                             }
+                            break
                         }
-
-                        checked[dependency] = true
                     }
+
+                    checked[dependency] = true
                 }
             }
         }
